@@ -2,7 +2,7 @@
 
 ## Resources
 
-- [Lecture VDO](#)
+- [Lecture VDO](https://www.youtube.com/playlist?list=PLNGLpHQhvGruc1eGgVieAbF9iUSPJGOon)
 
 ## Topic 1: Web Application
 
