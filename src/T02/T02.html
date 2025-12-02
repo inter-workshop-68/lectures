@@ -256,7 +256,7 @@
 <span class="hljs-keyword">function</span> <span class="hljs-title function_">sendWebhook</span>(<span class="hljs-params"></span>) {
   <span class="hljs-keyword">const</span> webhookUrl = <span class="hljs-string">&quot;&quot;</span>; <span class="hljs-comment">// Replace with your webhook URL</span>
 
-  <span class="hljs-keyword">const</span> message = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;message&quot;</span>).<span class="hljs-property">value</span> ?? <span class="hljs-string">&quot;Hello!&quot;</span>;
+  <span class="hljs-keyword">const</span> message = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;message&quot;</span>).<span class="hljs-property">value</span> || <span class="hljs-string">&quot;Hello!&quot;</span>;
   <span class="hljs-keyword">const</span> corsProxy = <span class="hljs-string">&quot;https://cors.iecmu.com&quot;</span>;
   <span class="hljs-title function_">fetch</span>(corsProxy + <span class="hljs-string">&quot;/&quot;</span> + webhookUrl, {
     <span class="hljs-attr">method</span>: <span class="hljs-string">&quot;POST&quot;</span>,
